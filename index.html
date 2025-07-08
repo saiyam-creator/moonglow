@@ -34,13 +34,15 @@
       100% { background-position: -2000px 1000px; }
     }
 
-    .moon-wrapper {
+  .moon-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  animation: rotate 70s linear infinite;
 }
+
 
     .moon {
       width: 400px;
@@ -57,7 +59,7 @@
       animation: pulse 2s ease-in-out infinite alternate;
     }
   
-@keyframes rotate {
+    @keyframes rotate {
   0%   { transform: translate(-50%, -50%) rotate(0deg); }
   100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
